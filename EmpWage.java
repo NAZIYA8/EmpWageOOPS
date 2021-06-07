@@ -6,6 +6,11 @@ public class EmpWage {
         calculateWage();
     }
 
+    /**
+     * Check if the employee is Present
+     * If Present Salary is returned
+     * If Absent Salary is returned 0
+     */
     private static void calculateWage() {
         double IS_PRESENT = 1;
         double empCheck = Math.floor(Math.random() * 10) % 2;
