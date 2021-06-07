@@ -3,20 +3,24 @@ package com.bridgelabz;
 public class EmpWage {
 
     public static void main(String[] args) {
-        ispresent();
+        calculateWage();
     }
 
-    private static void ispresent() {
+    private static void calculateWage() {
         double IS_PRESENT = 1;
         double empCheck = Math.floor(Math.random() * 10) % 2;
 
         if (empCheck == IS_PRESENT) {
-            System.out.println("Employee is Present ");
+            double EmpRatePerHr = 20;
+            double EmpHrs = 8;
+            double salary = (EmpRatePerHr * EmpHrs);
+            System.out.println(salary);
         } else {
-            System.out.println("Employee is Absent");
+            System.out.println("salary is 0");
         }
     }
 }
+
 
 
 
