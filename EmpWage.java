@@ -18,11 +18,19 @@ public class EmpWage {
         if (empCheck == IS_PRESENT) {
             double EmpRatePerHr = 20;
             double EmpHrs = 8;
-            double salary = (EmpRatePerHr * EmpHrs);
-            System.out.println(salary);
+            CalculateSalary(EmpRatePerHr, EmpHrs);
         } else {
             System.out.println("salary is 0");
         }
+    }
+
+    /**
+     * Salary is calculated
+     */
+    private static void CalculateSalary(double EmpRatePerHr, double EmpHrs) {
+        double Salary = EmpRatePerHr * EmpHrs;
+        System.out.println(Salary);
+
     }
 }
 
